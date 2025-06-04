@@ -8,6 +8,7 @@ import Registro from "./pages/Registro";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "./services/firebaseConfig";
 
+
 export default function App() {
   const [user, loading] = useAuthState(auth);
 

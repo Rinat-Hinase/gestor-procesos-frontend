@@ -4,6 +4,8 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../services/firebaseConfig"; // Adjust the path as necessary
 import { useNavigate } from "react-router-dom";
 
+import { Link } from "react-router-dom";
+
 
 
 export default function Login() {
@@ -58,9 +60,10 @@ export default function Login() {
         </button>
         <p className="text-center text-sm">
   ¿No tienes una cuenta?{" "}
-  <a href="/registro" className="text-blue-600 underline hover:text-blue-800">
-    Regístrate
-  </a>
+  <Link to="/registro" className="text-blue-600 underline hover:text-blue-800">
+  Regístrate
+</Link>
+
 </p>
 
       </form>

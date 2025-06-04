@@ -4,6 +4,8 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "../services/firebaseConfig";
 import { useNavigate } from "react-router-dom";
 import { setDoc, doc, getFirestore } from "firebase/firestore";
+import { Link } from "react-router-dom";
+
 
 const db = getFirestore();
 
@@ -31,7 +33,8 @@ export default function Registro() {
       });
 
       console.log("✅ Registro exitoso:", credenciales.user.email);
-      navigate("/dashboard");
+      navigate("/");  // ✔ Carga RegistroSolicitud
+
     } catch (err) {
       console.error(err);
       setError("Error al registrar usuario");
@@ -95,9 +98,10 @@ export default function Registro() {
         </button>
         <p className="text-center text-sm">
   ¿Ya tienes una cuenta?{" "}
-  <a href="/login" className="text-blue-600 underline hover:text-blue-800">
-    Inicia sesión
-  </a>
+  <Link to="/login" className="text-blue-600 underline hover:text-blue-800">
+  Inicia sesión
+</Link>
+
 </p>
 
       </form>

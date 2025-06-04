@@ -1,0 +1,27 @@
+{
+  "name": "gestor-procesos-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@react-pdf-viewer/core": "^3.12.0",
+    "@react-pdf-viewer/default-layout": "^3.12.0",
+    "pdfjs-dist": "^3.11.174",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-firebase-hooks": "^5.1.1",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.6.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.5.1",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.0.0",
+    "vite": "^4.0.0"
+  }
+}
